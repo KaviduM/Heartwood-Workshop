@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Order — Heartwood Workshop</title>
+  <meta name="description" content="Get in touch with Heartwood Workshop or start an order for a custom woodcraft piece.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
+          <circle cx="20" cy="20" r="11.5" stroke="currentColor" stroke-width="1.6" opacity="0.6"/>
+          <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Heartwood <span class="brand-tagline">Studio &amp; Workshop</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="designs.html">Designs</a>
+        <a href="materials.html">Materials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-scrim"></div>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header container reveal">
+      <p class="eyebrow">Contact &amp; Order</p>
+      <h1>Let's Start Talking About Your Project</h1>
+      <p class="lede">Whether you have finished drawings or just a rough idea sketched on a napkin, tell us about it below and we'll follow up within two workshop days.</p>
+    </section>
+
+    <!--  CONTACT INFO  -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Contact Info Column -->
+        <div class="reveal">
+          <div class="section--dark" style="padding: var(--space-lg); border-radius: var(--radius-md);">
+
+            <h2 style="color:var(--color-cream-text); font-size:1.6rem;">Visit or Reach Us</h2>
+
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 21c-4-4.2-7-7.8-7-11a7 7 0 1 1 14 0c0 3.2-3 6.8-7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+              <div>
+                <h3>Workshop Address</h3>
+                <p>Koggala, Habaraduwa.<br>Galle Road</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <h3>Email</h3>
+                <p>hello@heartwoodworkshop.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7 4h3l1.5 4-2 1.5a12 12 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 5 8.2 2 2 0 0 1 7 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <h3>Phone</h3>
+                <p>+94 7792 29847</p>
+              </div>
+            </div>
+
+            <div class="workshop-hours">
+              <h3 style="color:var(--color-cream-text);">Workshop Hours</h3>
+              <dl>
+                <dt>Mon&ndash;Fri</dt><dd>9:00am &ndash; 6:00pm</dd>
+                <dt>Saturday</dt><dd>10:00am &ndash; 2:00pm (by appointment)</dd>
+                <dt>Sunday</dt><dd>Closed</dd>
+              </dl>
+            </div>
+
+          </div>
+        </div>
+
+        <!--  Order -->
+        <div class="reveal reveal-delay-1">
+          <h2>Tell Us About the Project</h2>
+          <p class="lede">Fields marked with an asterisk (*) are required.</p>
+
+          <form id="order-form" novalidate>
+
+            <div class="form-grid form-grid--two">
+
+              <div class="field">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Nimal Jayashantha" required>
+                <span class="field-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                <span class="field-error"></span>
+              </div>
+
+            </div>
+
+            <div class="form-grid form-grid--two" style="margin-top: var(--space-md);">
+
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+94 7123 4567">
+                <span class="field-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="wood-preference">Wood Preference *</label>
+                <select id="wood-preference" name="wood-preference" required>
+                  <option value="" disabled selected>Choose a wood</option>
+                  <option value="walnut">Teak</option>
+                  <option value="oak">Nedun</option>
+                  <option value="ash">Mahogany</option>
+                  <option value="pine">Jackwood</option>
+                  <option value="unsure">Not Sure &mdash; Need Advice</option>
+                </select>
+                <span class="field-error"></span>
+              </div>
+
+            </div>
+
+            <div class="form-grid" style="margin-top: var(--space-md);">
+
+              <div class="field">
+                <label for="project-type">Project Type *</label>
+                <select id="project-type" name="project-type" required>
+                  <option value="" disabled selected>Choose a project type</option>
+                  <option value="furniture">Furniture (chair, table, shelving...)</option>
+                  <option value="interior">Interior Fit-Out</option>
+                  <option value="outdoor">Outdoor / Garden</option>
+                  <option value="repair">Repair or Restoration</option>
+                  <option value="other">Something Else</option>
+                </select>
+                <span class="field-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="details">Project Details *</label>
+                <textarea id="details" name="details" placeholder="Tell us about the space, rough dimensions, timeline, and anything you keep imagining." required></textarea>
+                <span class="field-error"></span>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--space-md);">Send Project Details</button>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer section--dark">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Heartwood Workshop</p>
+        <p>Smart, functional furniture and interiors, built to last generations &mdash; designed and joined by hand in our local workshop.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="designs.html">Our Designs</a></li>
+          <li><a href="materials.html">Materials &amp; Care</a></li>
+          <li><a href="contact.html">Contact &amp; Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Workshop</h4>
+        <ul>
+          <li>Koggala, Habaraduwa.</li>
+          <li>hello@heartwoodworkshop.com</li>
+          <li>+94 7792 29847</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Heartwood Workshop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
