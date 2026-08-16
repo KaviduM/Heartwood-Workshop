@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var viewport = carousel.querySelector('.carousel-viewport');
     var track = carousel.querySelector('.carousel-track');
-    var allSlides = Array.prototype.slice.call(track.children); // Clone කිරීම් ඉවත් කරන ලදී
+    var allSlides = Array.prototype.slice.call(track.children);
     var prevBtn = carousel.querySelector('.carousel-arrow--prev');
     var nextBtn = carousel.querySelector('.carousel-arrow--next');
     var dotsWrap = document.getElementById('projects-dots');
